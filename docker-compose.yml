@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+    heartbeat:
+        image: ${HEARTBEAT_IMAGE}
+        container_name: heartbeat
+        network_mode: host
+        environment:
+            - ELASTICSEARCH_HOSTS=${ELASTICSEARCH_HOSTS}
+            - ELASTICSEATCH_USERNAME=${ELASTICSEARCH_USERNAME}
+            - ELASTICSEARCH_PASSWORD=${ELASTICSEARCH_PASSWORD}
+        volumes:
+            - ./configs/heartbeat.docker.yml:/usr/share/heartbeat/heartbeat.yml:ro
