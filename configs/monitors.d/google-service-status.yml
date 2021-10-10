@@ -1,0 +1,7 @@
+- type: http
+  id: google-service-status
+  name: Google Service Status
+  service.name: my-apm-service-name
+  hosts: ["https://google.com"]
+  check.response.status: [200,301]
+  schedule: '@every 5s'
