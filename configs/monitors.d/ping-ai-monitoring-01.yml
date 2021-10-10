@@ -1,0 +1,5 @@
+- type: icmp
+  id: ping-ai-monitoring-01
+  name: Monitoring Server Ping
+  hosts: ["10.1.19.1"]
+  schedule: '*/5 * * * * * *'

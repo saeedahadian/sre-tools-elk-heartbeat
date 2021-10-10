@@ -1,0 +1,7 @@
+- type: tcp
+  id: tcp-ai-data-01-docker-registry
+  name: Docker Registry TCP Echo
+  hosts: ["172.16.17.38:5000"]  # default TCP Echo Protocol
+  check.send: "Check"
+  check.receive: "Check"
+  schedule: '@every 5s'

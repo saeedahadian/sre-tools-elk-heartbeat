@@ -1,0 +1,6 @@
+- type: tcp
+  id: ping-2
+  name: Monitoring Server Ping
+  hosts: ["172.16.17.38"]
+  ports: [5000,9200,9201,9290]
+  schedule: '@every 5s'
