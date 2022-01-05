@@ -1,6 +1,6 @@
 # heartbeat.yml
 heartbeat.config.monitors:
-  path: /usr/share/heartbeat/monitors.d/*.yml
+  path: /usr/share/heartbeat/monitors.d/*/*.yml
   reload.enabled: true
   reload.period: 10s
 
