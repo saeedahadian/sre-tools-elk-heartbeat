@@ -6,14 +6,16 @@ Heartbeat is a lightweight daemon from the elastic stack which is used to check 
 
 There are 3 different types of monitors in heartbeat that you can use to check if a service is responsive:
 
-ICMP
-: This checks whether you can ping a specific address.
+<dl>
+  <dt>ICMP</dt>
+  <dd>This checks whether you can ping a specific address.<dd>
 
-TCP
-: With this you can check reachability of a service on a specific port.
+  <dt>TCP</dt>
+  <dd>With this you can check reachability of a service on a specific port.</dd>
 
-HTTP
-: This option gives you more control on what kind of responses shows the availability of a service.
+  <dt>HTTP</dt>
+  <dd>This option gives you more control on what kind of responses shows the availability of a service.<dd>
+</dl>
 
 Each of these monitors could be configured in their respective directories below `configs`.
 
